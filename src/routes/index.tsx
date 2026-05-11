@@ -1,26 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/Nav";
+import { Hero } from "@/components/Hero";
+import { Ticker } from "@/components/Ticker";
+import { Product } from "@/components/Product";
+import { CaseStudy } from "@/components/CaseStudy";
+import { Stack } from "@/components/Stack";
+import { Stats } from "@/components/Stats";
+import { Team } from "@/components/Team";
+import { CTA } from "@/components/CTA";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "TradeTrain — Surveillance for prediction markets" },
+      { name: "description", content: "TradeTrain detects insider trading and market manipulation across prediction markets using a foundational identity graph." },
+      { property: "og:title", content: "TradeTrain — Surveillance for prediction markets" },
+      { property: "og:description", content: "Real-time flagging of illegal trades on Polymarket, Kalshi, and beyond." },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <main>
+        <Hero />
+        <Ticker />
+        <Product />
+        <CaseStudy />
+        <Stack />
+        <Stats />
+        <Team />
+        <CTA />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
