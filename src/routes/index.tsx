@@ -6,7 +6,7 @@ import { Product } from "@/components/Product";
 import { CaseStudy } from "@/components/CaseStudy";
 import { Stack } from "@/components/Stack";
 import { Stats } from "@/components/Stats";
-import { Team } from "@/components/Team";
+
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 
@@ -33,7 +33,7 @@ function Index() {
         <CaseStudy />
         <Stack />
         <Stats />
-        <Team />
+        
         <CTA />
       </main>
       <Footer />
