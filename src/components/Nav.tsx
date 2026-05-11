@@ -6,7 +6,7 @@ export function Nav() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <Logo />
         <nav className="hidden items-center gap-8 md:flex">
-          {["Product", "Graph Engine", "Coverage", "Team"].map((l) => (
+          {["Product", "Graph Engine", "Coverage"].map((l) => (
             <a key={l} href={`#${l.toLowerCase().replace(" ", "-")}`} className="font-mono text-xs uppercase tracking-widest text-muted-foreground transition hover:text-foreground">
               {l}
             </a>
