@@ -23,16 +23,28 @@ export function Hero() {
 
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             TradeTrain detects insider trading and market manipulation across prediction markets
-            using a foundational identity graph that links traders to their employers,
-            social networks, and on-chain wallets in real time.
+            using a foundational identity graph that links traders to their employers, social
+            networks, and on-chain wallets in real time.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="#contact" className="group inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 font-mono text-sm font-semibold uppercase tracking-wider text-primary-foreground transition hover:opacity-90 glow-primary">
-              Request a demo
+            <a
+              href="https://demo.tradetrain.me"
+              className="group inline-flex w-full max-w-xs items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 font-mono text-sm font-semibold uppercase tracking-wider text-primary-foreground transition hover:opacity-90 glow-primary sm:w-auto"
+            >
+              Try it out
               <span className="transition group-hover:translate-x-0.5">→</span>
             </a>
-            <a href="#product" className="inline-flex items-center gap-2 rounded-md border border-border bg-surface/60 px-6 py-3 font-mono text-sm uppercase tracking-wider text-foreground backdrop-blur transition hover:bg-surface-elevated">
+            <a
+              href="#contact"
+              className="inline-flex w-full max-w-xs items-center justify-center gap-2 rounded-md border border-border bg-surface/60 px-6 py-3 font-mono text-sm font-semibold uppercase tracking-wider text-foreground backdrop-blur transition hover:bg-surface-elevated sm:w-auto"
+            >
+              Request a demo
+            </a>
+            <a
+              href="#product"
+              className="inline-flex w-full max-w-xs items-center justify-center gap-2 rounded-md border border-border bg-surface/60 px-6 py-3 font-mono text-sm uppercase tracking-wider text-foreground backdrop-blur transition hover:bg-surface-elevated sm:w-auto"
+            >
               See how it works
             </a>
           </div>
